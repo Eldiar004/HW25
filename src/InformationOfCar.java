@@ -4,6 +4,16 @@ public class InformationOfCar {
     private int price;
     private String color;
 
+    @Override
+    public String toString() {
+        return "InformationOfCar{" +
+                "yearOfRelease=" + yearOfRelease +
+                ", model='" + model + '\'' +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                '}';
+    }
+
     public InformationOfCar(int yearOfRelease, String model, int price, String color) {
         this.yearOfRelease = yearOfRelease;
         this.model = model;

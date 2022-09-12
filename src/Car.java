@@ -1,6 +1,6 @@
 public class Car {
     private int ID;
-    private String numberOfCar;
+    private int numberOfCar;
 
     @Override
     public String toString() {
@@ -10,7 +10,7 @@ public class Car {
                 '}';
     }
 
-    public Car(int ID, String numberOfCar) {
+    public Car(int ID, int numberOfCar) {
         this.ID = ID;
         this.numberOfCar = numberOfCar;
     }
@@ -19,7 +19,7 @@ public class Car {
         return ID;
     }
 
-    public String getNumberOfCar() {
+    public int getNumberOfCar() {
         return numberOfCar;
     }
 }
